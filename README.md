@@ -37,9 +37,9 @@ and convert any uuid-object to a huuid-string with
 The hexadecimal representation of the UUID is translated to letters that have an unambiguous pronounciation. The 2nd, and then every third letter is a vowel, the other ones are consonants which makes up a well pronounced word that sounds like it is made up of syllables.
 
 There are 5 vowels and 16 consonants (just unambiguous ones) being used, and (only) for the first letter capitals are allowed.
-    (and a capital-C additional to the 16 chosen unambiguous consonants to reach 32bit with 9 letters)
+(And a capital-C additional to the 16 chosen unambiguous consonants to reach 32bit with 9 letters)
 
-With this structure there are a little more than 2^32 possibilities to generate a word with 9 letters.
+With this pattern there are a little more than 2^32 possibilities to generate a word with 9 letters.
 4 "Words" hit the 128bit of UUIDs (>10^38).
 
 ## Dependencies
