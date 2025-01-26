@@ -1,9 +1,9 @@
-# mdtex2html
+# huuid - human UUIDs
 python3-library to convert uuids forth and back to a human-readable and pronounceable format
 
-## What is mdtex2html
+## What is huuid
 
-`hhuid` makes a bijective transformation from uuids to a format that can be read, pronounced and typed a lot better than the default formats.
+`hhuid` does a bijective transformation from uuids to a format that can be read, pronounced and typed a lot better than the default formats.
 No Information is lost in the mapping.
 
 Here is an example-output of the `demo.py` in the `tests`-folder:
