@@ -5,7 +5,7 @@ on: push
 jobs:
   build:
     name: Build distribution
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
@@ -32,10 +32,10 @@ jobs:
   publish-to-pypi:
     name: >-
       Publish to PyPI
-    #if: startsWith(github.ref, 'refs/tags/')  # only publish to PyPI on tag pushes
+    if: startsWith(github.ref, 'refs/tags/')  # only publish to PyPI on tag pushes
     needs:
     - build
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     environment:
       name: pypi
       url: https://pypi.org/p/huuid
