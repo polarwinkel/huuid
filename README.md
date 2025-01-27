@@ -20,11 +20,13 @@ generated 64bit-Password:    Vezvegdum-ladzibkal
 
 ## How to use `huuid`
 
-install it, i.e. using pip:
+Install it using pip:
 
 `pip install huuid`
 
-then in python import in your code with
+or just put the folder `huuid` in your project-root. (Jep, just that one file - that's all!)
+
+Then in python import it in your code with
 
 `import huuid`
 
