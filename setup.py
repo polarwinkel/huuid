@@ -4,7 +4,7 @@ setup(
     keywords='TeX, LaTeX, Markdown, HTML markdown2html, latex2mathml',
     packages=find_packages(),
     python_requires='>=3.7, <4',
-    install_requires=['markdown', 'latex2mathml'],
+    install_requires=['uuid', 'math'],
     project_urls={
         'Bug Reports': 'https://github.com/polarwinkel/mdtex2html/issues',
         'Source': 'https://github.com/polarwinkel/mdtex2html',
