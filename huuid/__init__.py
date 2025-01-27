@@ -2,7 +2,7 @@
 '''
 This will convert a UUID to a human-readable and pronouncable format.
 
-version 0.8.0
+version 0.8.1
 
 (c) 2025 by Dirk Winkel
 
