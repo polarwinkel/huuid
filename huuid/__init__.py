@@ -2,7 +2,7 @@
 '''
 This will convert a UUID to a human-readable and pronouncable format.
 
-version 0.8.1
+version 0.9.0
 
 (c) 2025 by Dirk Winkel
 
@@ -66,6 +66,8 @@ def __str2int32(s):
 
 def uuid2human(uid, depth=128):
     '''convert a uuid-object to a human-readable phonetic string'''
+    if type(uid)==str:
+        uid = uuid.UUID(uid)
     if not isinstance(uid, uuid.UUID):
         raise TypeError('not an uuid-object')
     ustr = str(uid.hex)

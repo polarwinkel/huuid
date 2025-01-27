@@ -28,9 +28,17 @@ then in python import in your code with
 
 `import huuid`
 
-and convert any uuid-object to a huuid-string with
+and convert any uuid-object or uuid-string to a huuid-string with
 
 `huuid.uuid2human(myUuidObject)`
+
+Optionally you can limit the huuid-string to the 32, 64 or 96 bit:
+
+`huuid.uuid2human(myUuidObject, 64)`
+
+Convert it back to a uuid-string with
+
+`huuid.human2uuid(myUuidObject)`
 
 ## Background
 
