@@ -97,7 +97,7 @@ def human2uuid(s):
 
 def new():
     '''generate a new huuid'''
-    uid = uuid.uuid4()
+    uid = str(uuid.uuid4())
     return uuid2human(uid)
 
 def pwgen(entropy=32):
