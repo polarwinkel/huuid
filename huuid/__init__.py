@@ -2,7 +2,7 @@
 '''
 This will convert a UUID to a human-readable and pronouncable format.
 
-version 0.9.0
+version 0.9.0dev
 
 (c) 2025 by Dirk Winkel
 
@@ -94,6 +94,11 @@ def human2uuid(s):
     if len(out) == 32:
         return uuid.UUID(out)
     return out
+
+def new():
+    '''generate a new huuid'''
+    uid = uuid.uuid4()
+    return uuid2human(uid)
 
 def pwgen(entropy=32):
     '''generate a password with an entropy of 32, 64, 96 or 128bit'''
